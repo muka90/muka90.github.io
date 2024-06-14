@@ -1,7 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <canvas id="network-bg"></canvas>
+    <div class="content">
+        <header>
+            <h1>Hi! I'm Ugur.</h1>
+          <h2>This Web page is still under construction!</h2>
+			   </header>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <button onclick="scrollToSection('about')">More</button>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>Details of my projects will be listed here. </p>
+                <button onclick="scrollToSection('projects')">More</button>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>You can contact me at ...</p>
+                <button onclick="scrollToSection('contact')">More</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Ugur Karagülle. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
